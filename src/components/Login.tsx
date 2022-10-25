@@ -1,3 +1,11 @@
+/*
+ * @Author: OCEAN.GZY
+ * @Date: 2022-10-25 17:51:10
+ * @LastEditors: OCEAN.GZY
+ * @LastEditTime: 2022-10-25 18:27:09
+ * @FilePath: /batnoter/src/components/Login.tsx
+ * @Description: 注释信息
+ */
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { LoadingButton } from '@mui/lab';
 import { Box, Container, Toolbar, Typography } from '@mui/material';
@@ -42,7 +50,7 @@ const Login: React.FC<Props> = ({ user, handleLogin, userAPIStatus }): ReactElem
 
       <Box display="flex" sx={{ my: 2 }} alignItems="center" justifyContent={'space-around'}>
         <Box flexGrow={1} sx={{ mx: 0, my: 2 }} display={{ xs: "none", md: "block" }}>
-          <img style={{ width: '100%', border: "1px solid #80808080", borderRadius: "8px" }} src="/demo.gif" />
+          <img style={{ width: '100%', border: "1px solid #80808080", borderRadius: "8px" }} src="/demo.gif" alt="" />
         </Box>
         <Box flexShrink={0} sx={{ my: 6, ml: 4, p: 2, width: '400px', height: '100%', border: '1px solid grey', borderRadius: 2 }}>
           <Typography variant="h5" align="center">GET STARTED</Typography>

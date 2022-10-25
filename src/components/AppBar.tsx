@@ -80,15 +80,15 @@ const AppBar: React.FC<Props> = ({ user, userAPIStatus, handleLogin, handleLogou
           >
             <MenuIcon />
         </IconButton>
-        <Link variant="h6" noWrap component={NavLink} to={"/"} sx={{ flexGrow: 1, display: "flex", color: 'inherit' }}>BATNOTER</Link>
+        <Link variant="h6" noWrap component={NavLink} to={"/"} sx={{ flexGrow: 1, display: "flex", color: 'inherit' }}>OCEAN NOTE</Link>
         <Button sx={{ mx: 1, color: 'inherit' }} onClick={handleThemeModeToggle}>
           {themeMode === 'dark' ? <ThemeToggleIconLight /> : <ThemeToggleIconDark />}
         </Button>
-        <AppBarLink href={URL_SPONSOR} label="sponsor" icon={FavoriteIcon} iconColor="#d489b5" />
-        <AppBarLink href={URL_TWITTER_HANDLE} label="@batnoter" icon={TwitterIcon} iconColor="#b1d5ff" />
-        <AppBarLink href={URL_FAQ} label="faq" icon={MessageQuestion} iconColor="#c7d097" />
-        <AppBarLink href={URL_ISSUES} label="bug report" icon={Ladybug} iconColor="#eeb082" />
-        <AppBarLink href={URL_GITHUB} label="github" icon={GitHubIcon} iconColor="#dadada" />
+        {/* <AppBarLink href={URL_SPONSOR} label="sponsor" icon={FavoriteIcon} iconColor="#d489b5" /> */}
+        {/* <AppBarLink href={URL_TWITTER_HANDLE} label="@batnoter" icon={TwitterIcon} iconColor="#b1d5ff" /> */}
+        {/* <AppBarLink href={URL_FAQ} label="faq" icon={MessageQuestion} iconColor="#c7d097" /> */}
+        {/* <AppBarLink href={URL_ISSUES} label="bug report" icon={Ladybug} iconColor="#eeb082" /> */}
+        {/* <AppBarLink href={URL_GITHUB} label="github" icon={GitHubIcon} iconColor="#dadada" /> */}
         {user && <AppBarLink component={NavLink} to="/new" label="create note" icon={PlusBox} iconColor="#c1f497" />}
 
         <Box sx={{ ml: 1 }}>
